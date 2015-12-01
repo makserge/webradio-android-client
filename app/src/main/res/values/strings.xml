@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">WebRadio</string>
     <string name="search">Search</string>
+    <string name="fm_radio">FM Radio</string>
+    <string name="web_radio">Web Radio</string>
+    <string name="mp3_player">MP3 Player</string>
 </resources>
