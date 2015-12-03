@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/web"
+        android:title="@string/web_radio"
+        android:icon="@drawable/webradio" />
+
     <item
         android:id="@+id/fm"
         android:title="@string/fm_radio"
         android:icon="@drawable/radio" />
+
+    <item
+        android:id="@+id/mp3"
+        android:title="@string/mp3_player"
+        android:icon="@drawable/mp3_player" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/settings" />
 
 </menu>

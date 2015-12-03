@@ -6,17 +6,15 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.smsoft.webradio.R;
+import com.smsoft.webradio.activity.MainActivity;
 import com.smsoft.webradio.fragment.TabFragment;
 
 /**
  * Created by sergey on 02.12.2015.
  */
 public class TabsPageFragmentAdapter extends FragmentPagerAdapter {
-    private static final int FM_POSITION = 0;
-    private static final int WEB_POSITION = 1;
-    private static final int MP3_POSITION = 2;
     private Context mContext;
-    private int mTabs[] = { R.string.fm_radio, R.string.web_radio, R.string.mp3_player };
+    private int mTabs[] = { R.string.web_radio, R.string.fm_radio, R.string.mp3_player };
 
     public TabsPageFragmentAdapter(FragmentManager fm) {
         super(fm);
@@ -35,11 +33,11 @@ public class TabsPageFragmentAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case FM_POSITION:
+            case MainActivity.WEB_TAB_POSITION:
                 return TabFragment.getInstance();
-            case WEB_POSITION:
+            case MainActivity.FM_TAB_POSITION:
                 return TabFragment.getInstance();
-            case MP3_POSITION:
+            case MainActivity.MP3_TAB_POSITION:
                 return TabFragment.getInstance();
         }
         return null;

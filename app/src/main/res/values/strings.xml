@@ -4,4 +4,5 @@
     <string name="fm_radio">FM Radio</string>
     <string name="web_radio">Web Radio</string>
     <string name="mp3_player">MP3 Player</string>
+    <string name="settings">Settings</string>
 </resources>
